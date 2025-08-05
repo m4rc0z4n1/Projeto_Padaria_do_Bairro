@@ -3,6 +3,7 @@ Projeto final do curso Programação Web (Qualifica SP/FAT). Site responsivo par
 
 ==================================================
 PROJETO: Website da Padaria do Bairro 
+Link Git Hub: https://m4rc0z4n1.github.io/Projeto_Padaria_do_Bairro/
 ==================================================
 README.txt (Revisado em 03 de Agosto de 2025)
 

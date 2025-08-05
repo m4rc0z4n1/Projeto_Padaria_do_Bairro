@@ -319,6 +319,16 @@ footer { background-color: var(--cor-primaria); color: var(--cor-neutra); text-a
     #btnVoltarTopo { padding: 15px; font-size: 18px; bottom: 40px; right: 110px; }
     .whatsapp-flutuante { width: 60px; height: 60px; bottom: 40px; right: 40px; }
     .whatsapp-flutuante img { width: 36px; height: 36px; }
+
+/* CORREÇÃO PARA O CARRINHO NO DESKTOP */
+    #pagina-pedidos #carrinho-compras.sticky-top {
+        top: 155px; /* Altura correta do topo para o header de desktop */
+    }
+
+    .carrinho-wrapper {
+        /* Sobrescreve a altura máxima para se ajustar ao header maior do desktop */
+        max-height: calc(100vh - 155px); 
+    }
 }
 
 @media (min-width: 768px) {
@@ -359,10 +369,15 @@ footer { background-color: var(--cor-primaria); color: var(--cor-neutra); text-a
 #aviso-preenchimento { background-color: #fff3cd; border-left: 5px solid #ffc107; padding: 1rem; margin-bottom: 1.5rem; }
 /* Contêiner limitador para sticky */
 
+
 .carrinho-wrapper {
     position: relative;
-    max-height: calc(100vh - 155px); /* Altura visível da tela menos o header */
-    overflow: visible;
+    /* Define a altura máxima para MOBILE, considerando o topo de 120px do cabeçalho */
+    max-height: calc(100vh - 120px); 
+    /* Adiciona uma barra de rolagem VERTICAL APENAS se o conteúdo ultrapassar a altura máxima */
+    overflow-y: auto; 
+    /* Esconde qualquer overflow horizontal para evitar problemas de layout */
+    overflow-x: hidden;
 }
 
 /* Corrige o sticky sem ultrapassar o cabeçalho */

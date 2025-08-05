@@ -1,5 +1,6 @@
 ==================================================
 PROJETO: Website da Padaria do Bairro 
+Link GitHub Pages: https://m4rc0z4n1.github.io/Projeto_Padaria_do_Bairro/
 ==================================================
 README.txt (Revisado em 03 de Agosto de 2025)
 

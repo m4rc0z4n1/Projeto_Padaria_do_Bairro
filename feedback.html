@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="padding: 1rem;">
+    
+<fieldset>
+    <legend>Formulário de Feedback</legend>
+
+    <form action="#" method="post">
+    
+        <label for="nome">Nome :   <input name="nome"></label><br>
+    <br>    
+       <label for="email">Email (opcional):<input type="email" id="email" name="email"></label><br>
+    <br><br>
+
+        <label for"produto_servico>Qual produto/serviço você está avaliando?</label><br>
+        <select name="produto_servico" required>
+            <option disabled selected>Selecione uma opção</option>
+            <option>Pães tradicionais</option>
+            <option>Doces e bolos</option>
+            <option>Salgados</option>
+            <option>Atendimento</option>
+            <option>Ambiente</option>
+            <option>Preços</option>
+        </select>
+        <br><br>
+
+        <p><strong>Avaliação Geral:</strong></p>
+        <input type="radio" id="excelente" name="avaliacao" value="excelente" required>
+        <label for="excelente">Excelente</label><br>
+        
+        <input type="radio" id="bom" name="avaliacao" value="bom">
+        <label for="bom">Bom</label><br>
+        
+        <input type="radio" id="regular" name="avaliacao" value="regular">
+        <label for="regular">Regular</label><br>
+        
+        <input type="radio" id="ruim" name="avaliacao" value="ruim">
+        <label for="ruim">Ruim</label><br>
+        <br>
+
+        <label for="comentarios">Seus Comentários:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="6" cols="50" placeholder="Deixe suas críticas ou sugestões aqui..."></textarea>
+        <br><br>
+
+        <input type="checkbox" id="recomendaria" name="recomendaria" value="sim">
+        <label for="recomendaria">Recomendaria para amigos?</label>
+        <br><br>
+
+        <input type="checkbox" id="autoriza" name="autoriza" value="sim">
+        <label for="autoriza">Autoriza a publicação deste depoimento no site?</label>
+        <br><br>
+
+        <button type="submit">Enviar Feedback</button>
+</fieldset>
+    </form>
+
+</body>
+</html>

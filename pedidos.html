@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pedidos Especiais</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="padding: 1rem;">
+
+    <h1>Formulário de Pedidos Especiais</h1>
+    
+    <form action="#" method="post">
+
+      <!-- Seção 1: Dados do Cliente -->
+      <!--  -->
+             <fieldset>
+            <legend>Dados do Cliente</legend>
+            
+            <label for="nome"> Nome Completo:<br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+           </label> <br><br>
+
+            <label for="telefone"> Telefone:<br>
+            <input type="tel" id="telefone" name="telefone" placeholder="(11) 98765-4321" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" required>
+            </label><br><br>
+
+            <label for="email"> Email:<br>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+            </label>
+            </fieldset>
+        <br>
+
+            <fieldset>
+            <legend> Seção 2: Detalhes do Pedido</legend>
+
+            <p><strong>Tipo de Produto:</strong></p>
+            <label><input type="radio" name="tipo_produto" value="bolo" checked> Bolo</label><br>
+            <label><input type="radio" name="tipo_produto" value="torta"> Torta</label><br>
+            <label><input type="radio" name="tipo_produto" value="salgados"> Salgados</label><br>
+            <br>
+
+            <label for="sabor">Sabor/Recheio:</label><br>
+            <select id="sabor" name="sabor" required>
+                <option value="" disabled selected>Escolha um sabor</option>
+                <option value="chocolate"> Chocolate</option>
+                <option value="morango"> Morango</option>
+                <option value="baunilha"> Baunilha</option>
+                <option value="doce_de_leite"> Doce de Leite</option>
+                <option value="ninho_nutella"> Ninho com Nutella</option>
+            </select>
+
+            <br><br>
+
+            <p><strong>Tamanho:</strong></p>
+            <label><input type="radio" name="tamanho" value="pequeno"> Pequeno (serve 10 pessoas)</label><br>
+            <label><input type="radio" name="tamanho" value="medio" checked> Médio (serve 20 pessoas)</label><br>
+            <label><input type="radio" name="tamanho" value="grande"> Grande (serve 35 pessoas)</label><br>
+            <br>
+
+            <label for="data_entrega">Data de Entrega:</label><br>
+            <input type="date" id="data_entrega" name="data_entrega" required>
+
+            </fieldset>
+        <br>
+
+    <fieldset>
+            <legend> Seção 3: Informações Adicionais</legend>
+
+            <label for="observacoes">Observações Especiais (tema, cores, etc.):</label><br>
+            <textarea id="observacoes" name="observacoes" rows="5" cols="40" placeholder="Ex: Bolo com tema de super-herói, com as cores azul e vermelho."></textarea>
+            <br><br>
+
+            <label for="orcamento">Orçamento Máximo (opcional):</label><br>
+            <input type="number" id="orcamento" name="orcamento" min="0" step="0.01" placeholder="Ex: 300.00">
+
+        
+        <br>
+
+        <button type="submit">Enviar Pedido</button>
+    </fieldset>    
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+/* PROJETO: Padaria do Bairro */
+/* Para garantir que seu site comece com a mesma base em todos os navegadores */                   
+/* Reseta margens, preenchimentos e bordas para um início limpo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
